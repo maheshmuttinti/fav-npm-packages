@@ -2,7 +2,7 @@ import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 import { NotFound } from "./screens/NotFound";
 import Home from "./screens/Home";
-import AddFavouriteNPMPackages from "./screens/AddFavouritePackages";
+import AddFavoritePackages from "./screens/AddFavoritePackages";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route
         path="/add-fav-npm-packages"
-        element={<AddFavouriteNPMPackages />}
+        element={<AddFavoritePackages />}
       />
       <Route path={"*"} element={<NotFound />} />
     </Routes>

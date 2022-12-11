@@ -1,14 +1,21 @@
 import React from "react";
 
-export const SearchInput = ({ label, value, className, onChange, ...rest }) => {
+export const SearchInput = ({
+  label,
+  value,
+  labelClassNames,
+  classNames,
+  onChange,
+  ...rest
+}) => {
   return (
     <>
-      <p>{label}</p>
+      <p className={`${labelClassNames}`}>{label}</p>
       <input
         type="input"
         value={value}
-        className={`${className}`}
-        onChange={onChange}
+        className={`${classNames}`}
+        onChange={({ target: { value } }) => onChange(value)}
         {...rest}
       />
     </>

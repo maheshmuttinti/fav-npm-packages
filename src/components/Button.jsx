@@ -4,7 +4,7 @@ export const Button = ({ classNames, title, ...rest }) => {
   return (
     <input
       className={`${classNames}`}
-      type="button"
+      type="submit"
       value={`${title}`}
       {...rest}
     />

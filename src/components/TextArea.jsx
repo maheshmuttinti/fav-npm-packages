@@ -12,7 +12,7 @@ export const TextArea = ({
   return (
     <>
       <label
-        for="favorite-description"
+        htmlFor="favorite-description"
         name="favorite-description"
         className={`${labelClassNames}`}
       >

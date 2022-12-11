@@ -1,7 +1,20 @@
-import React from "react";
+import * as React from "react";
+import { Routes, Route } from "react-router-dom";
+import { NotFound } from "./screens/NotFound";
+import Home from "./screens/Home";
+import AddFavouriteNPMPackages from "./screens/AddFavouritePackages";
 
 function App() {
-  return <div className="text-red-700"></div>;
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route
+        path="/add-fav-npm-packages"
+        element={<AddFavouriteNPMPackages />}
+      />
+      <Route path={"*"} element={<NotFound />} />
+    </Routes>
+  );
 }
 
 export default App;

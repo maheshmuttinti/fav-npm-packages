@@ -19,7 +19,7 @@ export const Modal = ({
       }}
       contentLabel={heading}
       id={"div-id"}
-      className={`container mx-auto flex items-center justify-center ${modalClassNames}`}
+      className={`container mx-auto flex items-center justify-center px-6 ${modalClassNames}`}
       ariaHideApp={true}
       shouldFocusAfterRender={true}
       shouldCloseOnOverlayClick={true}

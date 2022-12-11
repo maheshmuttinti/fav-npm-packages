@@ -38,7 +38,7 @@ export default function AddFavoritePackages() {
   };
 
   return (
-    <div className="container mx-auto mt-24">
+    <div className="container mx-auto mt-10">
       <button
         type="button"
         onClick={() => navigate("/")}

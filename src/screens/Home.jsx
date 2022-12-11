@@ -85,7 +85,7 @@ export default function Home() {
         }
       />
 
-      <div className="mt-20 py-7 container mx-auto">
+      <div className="mt-10 py-7 container mx-auto">
         <div className="flex items-center">
           <div className="flex-1">
             <h1 className="text-2xl">Welcome to Favorite NPM Packages</h1>
